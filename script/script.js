@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
+    typeWriter();
+
     const menuItems = document.querySelectorAll('.menu a');
 
     menuItems.forEach(function(item) {
@@ -39,5 +41,17 @@ document.addEventListener("DOMContentLoaded", function() {
         var header = document.querySelector('header');
         header.classList.toggle('scrolled', window.scrollY > 100);
     });
-    
+
 });
+
+var i = 0;
+var txt = '';
+var speed = 50;
+
+function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("initial-word").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }

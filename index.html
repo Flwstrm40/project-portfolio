@@ -7,14 +7,18 @@
 
     <!-- Link Style Css -->
     <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/header-style.css">
+    <link rel="stylesheet" href="style/about-style.css">
 
     <!-- Link font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- Link js -->
-    <script src="script/script.js"></script>
+    <!-- Fira code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
 
     <!-- Link font awesome -->
     <script src="https://kit.fontawesome.com/fdfcf1a28d.js" crossorigin="anonymous"></script>
@@ -28,9 +32,9 @@
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about"><span>👨‍🦱</span>Me</a></li>
+                <li><a href="#projects"><span>💻</span>Projects</a></li>
+                <li><a href="#contact"><span>📞</span>Contact</a></li>
             </ul>
             <div class="burger-menu">
                 <i class="fas fa-bars"></i>
@@ -42,7 +46,7 @@
     <main>
         <article id="about">
             <div class="left-side">
-                <img class="profpic" src="public/Ran-Cry.png" alt="Profile Picture" width="250px" height="250px">
+                <img class="profpic" src="public/Ran-Cry.png" alt="Profile Picture">
                 <div class="socmed">
                     <a href="https://www.instagram.com/arkan40_/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                     <a href="https://www.github.com/flwstrm40/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
@@ -52,18 +56,23 @@
             </div>
             <div class="about-text">
                 <div class="header-about">
-                    <h1 style="font-weight: 900;">いらっしゃいませ</h1>
+                    <h1 class="title">いらっしゃいませ</h1>
                     <div class="welcome-text">
-                        <i class="fa-solid fa-volume-high"></i>
-                        <p>Welcome</p>
+                        <i class="fa-solid fa-language"></i>
+                        <p>Welcome -- UI/UX Designer | Web Developer</p>
                     </div>
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae minima provident hic earum voluptates saepe, debitis aliquam recusandae, illo possimus cum repudiandae, quo quibusdam ad pariatur aperiam vitae accusantium temporibus!</p>
+                <div id="initial-word">
+                    <p>Hi<span>&#128075;</span>, Muhammad Naufal Arkan here. Currently, I am majoring at the Department of Informatics, Diponegoro University.
+                        lately, I'm deeping my study about cloud computing | web development with Bangkit Academy program.</p>
+                    <p>That is picture of my fav character, Mitake Ran (美竹 蘭) from 
+                        <a href="https://bang-dream-gbp-en.bushiroad.com/" style="color: rgb(53, 192, 234)" target="_blank"><span>BanG Dream! Girls Band Party</span></a>.</p>
+                </div>
             </div>
         </article>
 
         <article id="projects">
-            <h2>Projects</h2>
+            <h2>What I've Done?</h2>
             <section>
                 <h3>Project 1</h3>
                 <p>This is a project I made. It's a website for a restaurant.</p>
@@ -100,7 +109,8 @@
         <p>&copy; 2020 Flwstrm</p>
     </footer>
 
-    <script src="script/index.js"></script>
+    <!-- Link Script -->
+    <script src="script/script.js"></script>
 
 </body>
 </html>

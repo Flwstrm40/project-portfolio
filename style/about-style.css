@@ -1,0 +1,127 @@
+/* --------- article about */
+
+#about {
+    background-color: var(--black);
+    padding-top: 50px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.socmed {
+    display: flex;
+    gap: 20px;
+}
+
+.welcome-text {
+    display: flex; 
+    margin-top: -50px; 
+    align-items: center; 
+    gap: 10px;
+    color: #848383;
+    font-size: 0.75em;
+}
+
+.header-about .title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about-text {
+    width: 100%;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.left-side {
+    margin-left: 150px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.left-side a {
+    color: #FBF9F1;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+    font-size: 1.2em;
+}
+
+.left-side a:hover {
+    color: #557A46;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.left-side .profpic {
+    width: 250px; 
+    height: 250px;
+}
+
+
+/* --------- end of article about */
+
+@media (max-width: 992px) {
+    #about {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+    }
+
+    .left-side {
+        margin-left: 0;
+        margin-top: 100px;
+    }
+
+    .left-side .profpic {
+    width: 200px; 
+    height: 200px;
+    }
+
+    .about-text {
+        margin: 10px 30px 50px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .welcome-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome-text i{
+        display: none;
+    }
+    .about-text p {
+        margin-right: 30px;
+        margin-left: 30px;
+        text-align: center;
+    }
+
+    .header-about .title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left-side .profpic {
+        width: 150px; 
+        height: 150px;
+    }
+}

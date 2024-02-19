@@ -1,80 +1,41 @@
+:root {
+    --primary: rgb(11, 44, 34);
+    --secondary: #rgb(53, 192, 234);
+    --black: #000;
+    --white: #fff;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0; 
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
 body {
     background-color: #191919;
     color: #FBF9F1;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Fira Code', sans-serif;
 }
 
 li {
     list-style: none;
 }
 
-/* Header */
-header {
-    background-color: #000000;
-    color: #FBF9F1;
-    padding: 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    height: fit-content;
-}
-
-header.scrolled {
-    background-color: #557A46; 
-}
-
-.logo {
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-}
-
-/* ------ Menu */
-.menu {
-    display: flex;
-    align-items: center;
-    margin-right: 40px;
-    gap: 20px;
-    animation:  3s ease-in-out;   
-    animation-duration: 3s;
-}
-
-.burger-menu {
-    display: none;
-    cursor: pointer;
-}
-
-.menu a {
+a {
     color: #FBF9F1;
     text-decoration: none;
-    font-size: 0.9em;
-    padding: 5px 15px;
-    transition: all 0.3s ease;
 }
 
-.menu a:hover {
-    color: #191919;
-    background-color: #FBF9F1;
-    padding: 5px 15px;
-    border-radius: 5px;
-}
 
-.menu a.active {
-    color: #191919;
-    background-color: #FBF9F1;
-    padding: 5px 15px;
-    border-radius: 5px;
-    font-weight: 500;
-}
-
-/* --------- end of menu */
-
-/* end of header */
 
 /* Main */
 main {
@@ -82,114 +43,15 @@ main {
     text-justify: inter-word;
 }
 
-/* --------- article about */
 article {
     margin-bottom: 50px;
 }
 
-#about {
-    background-color: #000000;
-    padding-top: 50px;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    align-content: center;
-}
-
-
-.welcome-text {
-    display: flex; 
-    margin-top: -35px; 
-    align-items: center; 
-    gap: 10px;
-    color: #848383;
-    font-size: 0.75em;
-}
-
-.about-text {
-    width: 100%;
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
-.left-side {
-    margin-left: 150px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-}
-
-.left-side a {
-    color: #FBF9F1;
-    text-decoration: none;
-    padding: 5px 15px;
-    transition: all 0.3s ease;
-    font-size: 1.2em;
-}
-
-.left-side a:hover {
-    color: #557A46;
-    background-color: #ffffff;
-    border-radius: 5px;
-}
-
-
-/* --------- end of article about */
 
 
 
 /* MEDIA QUERY */
 @media (max-width: 768px) {
-    .menu {
-        display: none;
-    }
 
-    .burger-menu {
-        display: block;
-        margin-right: 30px;
-    }
-
-    #about {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: fit-content;
-    }
-
-    .left-side {
-        margin-left: 0;
-        margin-top: 100px;
-    }
-
-
-    .about-text {
-        margin: 10px 30px 50px 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header-about {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .welcome-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .welcome-text i{
-        display: none;
-    }
-    .about-text p {
-        margin-right: 30px;
-        margin-left: 30px;
-        text-align: center;
-    }
 }
 
