@@ -1,6 +1,6 @@
 :root {
-    --primary: rgb(11, 44, 34);
-    --secondary: #rgb(53, 192, 234);
+    --primary: rgb(67, 124, 101);
+    --secondary: rgb(53, 192, 234);
     --black: #000;
     --white: #fff;
 }
@@ -35,7 +35,29 @@ a {
     text-decoration: none;
 }
 
+.link-href {
+    color: var(--secondary);
+}
 
+.link-href:hover {
+    color: rgb(44, 147, 178);
+    transition: all 0.3s ease;
+}
+
+.jusify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
 
 /* Main */
 main {
@@ -43,9 +65,9 @@ main {
     text-justify: inter-word;
 }
 
-article {
+/* article {
     margin-bottom: 50px;
-}
+} */
 
 
 
