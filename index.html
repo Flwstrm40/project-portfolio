@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flwstrm - PortFolio</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+
     <!-- Link Style Css -->
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/header-style.css">
     <link rel="stylesheet" href="style/about-style.css">
+    <link rel="stylesheet" href="style/project-style.css">
 
     <!-- Link font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,7 +50,7 @@
     <main>
         <article id="about">
             <div class="left-side">
-                <img class="profpic" src="public/Ran-Cry.png" alt="Profile Picture">
+                <img class="profpic" src="public/Ran-Cry.png" alt="Mitake Ran">
                 <div class="socmed">
                     <a href="https://www.instagram.com/arkan40_/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                     <a href="https://www.github.com/flwstrm40/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
@@ -65,22 +69,65 @@
                 <div id="initial-word">
                     <p>Hi<span>&#128075;</span>, Muhammad Naufal Arkan here. Currently, I am majoring at the Department of Informatics, Diponegoro University.
                         lately, I'm deeping my study about cloud computing | web development with Bangkit Academy program.</p>
-                    <p>That is picture of my fav character, Mitake Ran (美竹 蘭) from 
-                        <a href="https://bang-dream-gbp-en.bushiroad.com/" style="color: rgb(53, 192, 234)" target="_blank"><span>BanG Dream! Girls Band Party</span></a>.</p>
+                    <p>That's a picture of my fav character, Mitake Ran (美竹 蘭) from 
+                        <a href="https://bang-dream-gbp-en.bushiroad.com/" class="link-href" target="_blank"><span>BanG Dream! Girls Band Party</span></a>.</p>
                 </div>
             </div>
         </article>
 
         <article id="projects">
             <h2>What I've Done?</h2>
-            <section>
-                <h3>Project 1</h3>
-                <p>This is a project I made. It's a website for a restaurant.</p>
-            </section>
-            <section>
-                <h3>Project 2</h3>
-                <p>This is a project I made. It's a website for a clothing store.</p>
-            </section>
+            <div class="project-text">
+                <i class="fa-solid fa-angles-down"></i>
+                <p>Let's Look below</p>
+            </div>
+            <div class="project-list">
+                <section class="first-project web-box project-box">
+                    <h3>ConVall</h3>
+                    <p class="justify inner-text">web application for decimal-octal-binary-hexadecimal conversion.</p>
+                    <div class="bottom-card">
+                        <div class="bottom-left web">
+                            <p>web</p>
+                        </div>
+                        <div class="bottom-right">
+                            <a href="https://github.com/Flwstrm40/ConVall" target="_blank">
+                                <i class="fa-brands fa-github pointer" style="color: #000000;"></i>
+                            </a>
+                            <a href="https://main--convall.netlify.app/" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square pointer" style="color: #000000;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="second-project web-box project-box">
+                    <h3>InvOliv</h3>
+                    <p class="justify inner-text">web application for stock storage (warehouse) at Offo Living Semarang.</p>
+                    <div class="bottom-card">
+                        <div class="bottom-left web">
+                            <p>web</p>
+                        </div>
+                        <div class="bottom-right">
+                            <i class="fa-brands fa-github pointer disabled" style="color: #000000;"></i>
+                            <i class="fa-solid fa-arrow-up-right-from-square disabled" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </section>
+                <section class="third-project ui-box project-box">
+                    <h3>A.Sco</h3>
+                    <p class="justify inner-text">Ui/Ux design for buy premium apps together with others mobile application.</p>
+                    <div class="bottom-card">
+                        <div class="bottom-left ui">
+                            <p>Ui/Ux</p>
+                        </div>
+                        <div class="bottom-right">
+                            <a href="https://dribbble.com/shots/17426376-Sharing-Cost-Mobile-App" target="_blank">
+                                <i class="fa-brands fa-dribbble pointer" style="color: #000000;"></i>
+                            </a>
+                            <!-- <i class="fa-solid fa-arrow-up-right-from-square" style="color: #000000;"></i> -->
+                        </div>
+                    </div>
+                </section>
+            </div>
         </article>
 
         <article id="contact">
