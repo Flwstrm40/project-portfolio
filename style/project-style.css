@@ -1,0 +1,121 @@
+#projects {
+    background-color: var(--black);
+    height: fit-content;
+    padding-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+#projects h2 {
+    color: var(--white);
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 5em;
+}
+
+.project-text {
+    display: flex; 
+    margin-top: -50px; 
+    align-items: center; 
+    gap: 10px;
+    color: #848383;
+    font-size: 0.9em;
+    margin-bottom: 50px;
+}
+
+.web-box {
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 0 20px #d13e3e, 0 0 20px #d13e3e, 0 0 20px #d13e3e, 0 0 20px #d13e3e; 
+}
+
+.ui-box {
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 0 20px var(--primary), 0 0 20px var(--primary), 0 0 20px var(--primary), 0 0 20px var(--primary); 
+}
+
+.ui {
+    background-color: var(--primary);
+}
+
+.web {
+    background-color: #d13e3e;
+}
+.project-box {
+    width: 20%;
+    background-color: #fff;
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+}
+
+.project-box h3 {
+    color: #333; 
+    margin-top: -5px;
+}
+
+.project-box p {
+    color: #666; 
+}
+
+.bottom-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -10px;
+}
+
+.bottom-left {
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    padding: 0 5px;
+}
+
+.bottom-left p {
+    color: #fff; 
+    font-size: 0.8em;
+    padding: 3px 8px; 
+    border-radius: 5px;
+}
+
+
+.bottom-right {
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.bottom-right a {
+    color: #d13e3e;
+    text-decoration: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pointer:hover {
+    color: red;
+    transition: all 0.3s ease;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.inner-text {
+    overflow-wrap: break-word; 
+    white-space: normal;
+}
