@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="style/about-style.css">
     <link rel="stylesheet" href="style/project-style.css">
     <link rel="stylesheet" href="style/contact-style.css">
+    <link rel="stylesheet" href="style/aside-style.css">
+    <link rel="stylesheet" href="style/footer-style.css">
 
     <!-- Link font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,12 +39,13 @@
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="#about"><span>👨‍🦱</span>Me</a></li>
+                <li><a href="#about"><span>🪹</span>Overview</a></li>
                 <li><a href="#projects"><span>💻</span>Projects</a></li>
                 <li><a href="#contact"><span>📞</span>Contact</a></li>
+                <li><a href="#bio"><span>👨‍🦱</span>Biodata</a></li>
             </ul>
             <div class="burger-menu">
-                <i class="fas fa-bars"></i>
+                <i class="fa-solid fa-bars-staggered"></i>
             </div>            
         </nav>
     </header>
@@ -64,10 +67,10 @@
                     <h1 class="title">いらっしゃいませ</h1>
                     <div class="welcome-text">
                         <i class="fa-solid fa-language"></i>
-                        <p>Welcome -- UI/UX Designer | Web Developer</p>
+                        <p id="initial-word"></p>
                     </div>
                 </div>
-                <div id="initial-word">
+                <div>
                     <p>Hi<span>&#128075;</span>, Muhammad Naufal Arkan here. Currently, I am majoring at the Department of Informatics, Diponegoro University.
                         lately, I'm deeping my study about cloud computing | web development with Bangkit Academy program.</p>
                     <p>That's a picture of my fav character, Mitake Ran (美竹 蘭) from 
@@ -92,10 +95,10 @@
                         </div>
                         <div class="bottom-right">
                             <a href="https://github.com/Flwstrm40/ConVall" target="_blank">
-                                <i class="fa-brands fa-github pointer" style="color: #000000;"></i>
+                                <i class="fa-brands fa-github pointer" style="color: #fff;"></i>
                             </a>
                             <a href="https://main--convall.netlify.app/" target="_blank">
-                                <i class="fa-solid fa-arrow-up-right-from-square pointer" style="color: #000000;"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square pointer" style="color: #fff;"></i>
                             </a>
                         </div>
                     </div>
@@ -108,8 +111,8 @@
                             <p>web</p>
                         </div>
                         <div class="bottom-right">
-                            <i class="fa-brands fa-github disabled" style="color: #000000;"></i>
-                            <i class="fa-solid fa-arrow-up-right-from-square disabled" style="color: #000000;"></i>
+                            <i class="fa-brands fa-github disabled" style="color: #fff;"></i>
+                            <i class="fa-solid fa-arrow-up-right-from-square disabled" style="color: #fff;"></i>
                         </div>
                     </div>
                 </section>
@@ -122,9 +125,9 @@
                         </div>
                         <div class="bottom-right">
                             <a href="https://dribbble.com/shots/17426376-Sharing-Cost-Mobile-App" target="_blank">
-                                <i class="fa-brands fa-dribbble pointer" style="color: #000000;"></i>
+                                <i class="fa-brands fa-dribbble pointer" style="color: #fff;"></i>
                             </a>
-                            <!-- <i class="fa-solid fa-arrow-up-right-from-square" style="color: #000000;"></i> -->
+                            <!-- <i class="fa-solid fa-arrow-up-right-from-square" style="color: #fff;"></i> -->
                         </div>
                     </div>
                 </section>
@@ -137,7 +140,7 @@
                         </div>
                         <div class="bottom-right">
                             <a href="https://www.figma.com/proto/ZRxyu4J8RpkYZXpgAj4PxK/Light-Novel-Reader?page-id=0%3A1&type=design&node-id=260-1424&viewport=573%2C231%2C0.11&t=EMebfjJcDmvAslkE-1&scaling=scale-down&starting-point-node-id=260%3A1424&mode=design" target="_blank">
-                                <i class="fa-brands fa-figma" style="color: #000000;"></i>
+                                <i class="fa-brands fa-figma" style="color: #fff;"></i>
                             </a>
                         </div>
                     </div>
@@ -151,7 +154,7 @@
                         </div>
                         <div class="bottom-right">
                             <a href="https://www.figma.com/proto/cwo1MPuub7EgYi2vwWr8qt/IMK-tugas-3?page-id=0%3A1&type=design&node-id=11-2&viewport=242%2C182%2C0.04&t=hNpFhGfSl5Tt1zcU-1&scaling=scale-down&starting-point-node-id=92%3A1048&mode=design" target="_blank">
-                                <i class="fa-brands fa-figma" style="color: #000000;"></i>
+                                <i class="fa-brands fa-figma" style="color: #fff;"></i>
                             </a>
                         </div>
                     </div>
@@ -160,36 +163,78 @@
         </article>
 
         <article id="contact">
-            <h2>Contact Me?</h2>
-            <p>You can contact me via
-                <div class="contact-list">
-                    <a href="mailto:arkan5855@gmail.com">
-                        <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
-                        <span>arkan5855@gmail.com</span>
-                    </a>
-                    <!-- telepon -->
-                    <a href="tel:+6281237587451">
-                        <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
-                        <span>+6281237587451</span>
-                    </a>
+            <h2>Need Me?</h2>
+            <div class="contact-body">
+                <div class="left-body">
+                    <img src="public/contact.gif" alt="contact">
+                </div>  
+                <div class="right-body">
+                    <p>You can contact me via: </p>
+                        <div class="contact-list">
+                            <a href="mailto:arkan5855@gmail.com">
+                                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                                <span>arkan5855@gmail.com</span>
+                            </a>
+                            <!-- telepon -->
+                            <a href="tel:+6281237587451">
+                                <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                                <span>+6281237587451</span>
+                            </a>
+                            <!-- linkedin -->
+                            <a href="https://www.linkedin.com/in/arkan-naufal" target="_blank">
+                                <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                                <span>Muhammad Naufal Arkan</span>
+                            </a>
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/muhammad.arkan.9634" target="_blank">
+                                <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+                                <span>Muhammad Naufal Arkan</span>
+                            </a>
+                        </div>
                 </div>
-            </p>
+            </div>
         </article>
 
-        <aside>
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-            </ul>
+        <aside id="bio">
+            <h2>Personal Information</h2>
+            <div class="detail-bio">
+                <div class="foto-side">
+                    <img src="public/Foto_diri.png" alt="my_photo">
+                </div>
+                <div class="biodata">
+                    <div class="biodata-list">
+                        <p>Name</p>
+                        <p>Birth</p>
+                        <p>Address</p>
+                        <p>Phone</p>
+                        <p>Email</p>
+                        <p>Education</p>
+                        <p>Skills</p>
+                        <p>Language</p>
+                    </div>
+                    <div class="biodata-detail">
+                        <p>: Muhammad Naufal Arkan</p>
+                        <p>: 16th September 2003</p>
+                        <p>: Boyolali, Central Java, Indonesia</p>
+                        <p>: +62 81237587451</p>
+                        <p>: arkan5855@gmail.com </p>
+                        <p>: Diponegoro University</p>
+                        <p>: Web Development, Ui/Ux Design, Cloud Computing</p>
+                        <p>: Indonesian, English</p>
+                    </div>
+                </div>
+            </div>
         </aside>
     </main>
 
     <footer>
-        <p>&copy; 2020 Flwstrm</p>
+        <div class="left-foot">
+            <p>&copy; 2024 - Muhammad Naufal Arkan</p>
+            <p>Made with <i class="fa-solid fa-heart"></i> by <span>Flwstrm</span></p>
+        </div>
+        <div class="right-foot">
+            
+        </div>
     </footer>
 
     <!-- Link Script -->

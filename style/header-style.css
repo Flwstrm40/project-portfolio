@@ -12,9 +12,11 @@ header {
 }
 
 header.scrolled {
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(0, 0, 0, .7);
     box-shadow: 0 0 10px rgba(11, 44, 34, 0.8), 0 0 90px rgba(11, 44, 34, 0.5); 
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px); 
 }
 
 .logo {
@@ -61,20 +63,51 @@ header.scrolled {
     font-weight: 500;
 }
 
+
 /* --------- end of menu */
 
 /* end of header */
 
+@media (max-width: 992px) {
+    header {
+        padding: 0 20px;
+    }
 
-
-@media (max-width: 768px) {
     .menu {
         display: none;
     }
 
     .burger-menu {
         display: block;
-        margin-right: 30px;
+        margin-right: 40px;
+    }
+    .menu.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 1);
+        width: 100%;
+        gap: 10px;
+        transition: all 0.3s ease;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
 
+    .menu.show a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px;
+    }
+    .menu.show a.active {
+        color: #191919;
+        background-color: #FBF9F1;
+        padding: 10px 10px;
+        border-radius: 5px;
+        font-weight: 500;
+    }
 }

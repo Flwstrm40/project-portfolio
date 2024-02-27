@@ -13,7 +13,7 @@
     color: var(--white);
     margin-top: 100px;
     margin-bottom: 50px;
-    font-size: 5em;
+    font-size: 4em;
 }
 
 #project-list {
@@ -60,19 +60,19 @@
 }
 .project-box {
     width: 20%;
-    background-color: #fff;
+    background-color: #101010;
     border-radius: 10px; 
     padding: 20px; 
     margin-bottom: 20px; 
 }
 
 .project-box h3 {
-    color: #333; 
+    color: #ffffff; 
     margin-top: -5px;
 }
 
 .project-box p {
-    color: #666; 
+    color: #cacaca; 
 }
 
 .bottom-card {
@@ -139,6 +139,7 @@
 
     #projects h2 {
         font-size: 3em;
+        text-align: center;
     }
 
     #project-list {
@@ -158,5 +159,18 @@
 
     .project-box {
         width: 50%;
+    }
+
+}
+
+@media (max-width: 482px) {
+    .inner-text {
+        height: 180px;
+    }
+}
+
+@media (max-width: 320px) {
+    .inner-text {
+        height: 230px;
     }
 }
